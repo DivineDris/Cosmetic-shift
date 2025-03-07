@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      scientific-laboratory-countertop_thump-1-1024x576_0: -7098013201941300695
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
