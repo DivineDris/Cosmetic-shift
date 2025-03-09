@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ParallelDimensionPrototype.unity
-    guid: 66926caa77b525b419d20f635c7a5942
+    path: Assets/Scenes/Start.unity
+    guid: 8f930bfbe199eee4fa3b092d54c6b61b
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 2dbdfcce1f6ab5e478ee1b987a7c8343
+  - enabled: 1
+    path: Assets/Scenes/Stop.unity
+    guid: 3cec9a79eb989124e9f99c229a78fa22
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

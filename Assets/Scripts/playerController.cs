@@ -1,8 +1,8 @@
 using NUnit.Framework.Interfaces;
 using System;
-using UnityEditor.Tilemaps;
+//using UnityEditor.Tilemaps;
 using UnityEngine;
-using static UnityEditor.Progress;
+//using static UnityEditor.Progress;
 
 public class playerController : MonoBehaviour
 {
@@ -58,6 +58,7 @@ public class playerController : MonoBehaviour
         if (isGrounded == true && Input.GetKeyDown(KeyCode.Space))
         {
             rb.linearVelocity = Vector2.up * jumpForce;
+            isGrounded = false;
         }
 
         if (InputX > 0)
@@ -126,14 +127,14 @@ public class playerController : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        isGrounded = true;
-        print("Grouneded");
+        if (collision.contacts[0].normal.y > 0.5f)
+        {
+            isGrounded = true;
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        isGrounded = false;
-        print("Not Grouneded");
     }
 }
 
