@@ -12,7 +12,7 @@ public class pDoor : MonoBehaviour
         {
             Debug.Log("Player entered the win zone!");
             // Load the next scene
-            SceneManager.LoadScene("Game");  // Ensure the scene name matches exactly
+            SceneManager.LoadScene("Stop");  // Ensure the scene name matches exactly
         }
     }
 
